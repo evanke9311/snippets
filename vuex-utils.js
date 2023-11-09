@@ -1,6 +1,6 @@
 console.log('run vuex-utils snippets')
 
-const getter = (moduleName, getterName) => {
+window.getter = (moduleName, getterName) => {
     try {
         return v_store.getters[`${moduleName}/${getterName}`]
     } catch {
